@@ -65,3 +65,30 @@ main{
     margin-top: 70px;
 }
 
+@media screen and (min-width:576px) {
+    .main-nav{
+        width: 200px;
+    }
+    .contenitore{
+        width: calc(100% - 200px);
+    }
+    .header-main{
+        width: calc(100% - 200px);
+        left: 200px;
+    }
+    
+    
+}
+@media screen and (min-width:768px) {
+    .cover-items{
+        width: 25%;
+    }
+    
+}
+@media screen and (min-width:992) {
+    .cover-items{
+        width: calc(100% / 6);
+    }
+    
+    
+}
