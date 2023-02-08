@@ -1,0 +1,40 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.debug main{
+    background-color: black;
+}
+.debug footer{
+    background-color: antiquewhite;
+}
+.debug .main-nav{
+    background-color: brown;
+}
+.debug .contenitore{
+    background-color: blue;
+}
+.debug #contenitore-nav{
+    background-color: aliceblue;
+    height: 50px;
+}
+footer{
+    height: 100px;
+   
+}
+main{
+    height: calc(100vh - 100px);
+   
+}
+nav{
+    width: 50px;
+}
+.contenitore{
+    width: calc(100% - 50px);
+}
+.flex{
+    display: flex;
+}
+
