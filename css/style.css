@@ -16,9 +16,13 @@
 .debug .contenitore{
     background-color: blue;
 }
-.debug #contenitore-nav{
+.debug .contenitore-nav{
     background-color: aliceblue;
     height: 50px;
+}
+.debug .cover-items{
+     background-color: aquamarine;
+     height: 200px;
 }
 footer{
     height: 100px;
@@ -28,13 +32,36 @@ main{
     height: calc(100vh - 100px);
    
 }
-nav{
+.main-nav{
     width: 50px;
+}
+.header-main{
+    position: fixed;
+    left: 50px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 50px);
 }
 .contenitore{
     width: calc(100% - 50px);
 }
 .flex{
     display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.scroll{
+    overflow-y: scroll;
+}
+.list{
+    list-style: none;
+}
+.cover-items{
+    width: calc(50% - 40px);
+    margin: 20px;
+}
+.contenitore-nav{
+    margin-top: 70px;
 }
 
