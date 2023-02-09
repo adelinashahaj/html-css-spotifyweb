@@ -4,18 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    font-family: 'Open Sans', sans-serif;;
+}
  main{
     background-color: rgb(7, 1, 25);
 }
-.debug footer{
-    
-}
+
 .debug .main-nav{
    background-color: black;
 }
-.debug .contenitore{
-   
-}
+
  .contenitore-nav{
     
     height: 50px;
@@ -24,18 +23,12 @@
      
      height: 200px;
 }
-.debug .nav-bottom{
-  
-}
-.debug .nav-top{
-   
-}
+
+
 .debug .logo{
     height: 50px;
 }
-.debug .nav-icons{
 
-}
 .btn {
     padding: 5px;
     border: 1px solid whitesmoke;
@@ -50,16 +43,22 @@
 .contenitore-nav ul{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 img{
     max-width: 100%;
 }
-.contenitore-nav li, a{
+.contenitore-nav li {
     list-style: none;
-    text-decoration: none;
+   
     color: gray;
+   
+}
+.contenitore-nav a{
+    text-decoration: none;
     padding: 10px;
+    color: #7a7d81;
 }
 #played h2{
      color: white;
@@ -84,13 +83,20 @@ main{
 }
 .nav-top img{
     max-height: 50%;
+    margin-left: 6px;
+    margin-top: 5px;
+
 }
 .br-img{
     display: flex;
     align-items: center;
 }
 .nav-icons img{
-    height: 50px;
+    height: 34px;
+    margin-left: 5px;
+}
+.nav-icons .br-img h4{
+    display: none;
 }
 .br-icons{
     display: flex;
@@ -101,9 +107,10 @@ main{
     margin-left: 5px;
 }
 .br-icons img{
-    height: 50px;
+    height: 32px;
     background-color: #7a7d81;
     border-radius: 50px;
+    margin-top: 10px;
 }
 .br-icons h5{
     color: white;
@@ -111,10 +118,16 @@ main{
 hr{
     margin: 10px 0;
 }
+hr{
+    display: none;
+}
 .nav-bottom{
     padding: 5px;
 }
-.nav-bottom .br-icons h4 h5{
+.nav-bottom .br-icons h4 {
+    display: none;
+}
+.nav-bottom .br-icons  h5{
     display: none;
 }
 aside{
@@ -134,10 +147,13 @@ aside{
 .addplaylist{
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .addplaylist i{
    font-size: 50px;
+   
 }
+
 
 .main-nav .nav-playlist {
     overflow: hidden;
@@ -254,7 +270,7 @@ footer{
 .avanzamento1{
     background-color: gray;
     height: 2px;
-    width: 30px;
+    width: 162px;
 }
 .avanzamento-colorato{
     background-color: white;
@@ -263,9 +279,12 @@ footer{
 }
 .icons3{
     display: flex;
+    align-items: center;
 
 }
-
+.icons3 i{
+     padding-right: 10px;
+}
 .footer-top .icons{
     margin-left: 1rem;
 }
@@ -326,10 +345,19 @@ footer{
         display: none;
     }
     .nav-top img{
-        max-height: 50%;
+        max-height: 43%;
     }
-    .nav-bottom h4 h5{
-        display: none;
+    .nav-bottom .br-icons h5{
+        display: block;
+    }
+    .nav-bottom .br-icons h4 {
+        display: block;
+    }
+    hr{
+        display: block;
+    }
+    .nav-icons .br-img h4{
+        display: block;
     }
     
 }
@@ -360,9 +388,20 @@ footer{
     .logo-s{
         display: none;
     }
-    .nav-bottom h4 h5{
-        display: none;
+    
+    .nav-bottom .br-icons h5{
+        display: block;
     }
+    .nav-bottom .br-icons h4 {
+        display: block;
+    } hr{
+        display: block;
+    }
+    .nav-icons .br-img h4{
+        display: block;
+    }
+    
+    
     
  
     
@@ -376,6 +415,15 @@ footer{
         overflow: hidden;
         padding: 10px;
         
+    }
+    .nav-bottom .br-icons h4 {
+        display: block;
+    }
+    hr{
+        display: block;
+    }
+    .nav-icons .br-img h4{
+        display: block;
     }
     
     
