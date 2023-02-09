@@ -10,23 +10,59 @@ html{
  main{
     background-color: rgb(7, 1, 25);
 }
-
-.debug .main-nav{
-   background-color: black;
+main{
+    height: calc(100vh - 100px);
+    overflow-y: hidden;
+   
 }
 
+
+.flex{
+    display: flex;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.scroll{
+    overflow-y: scroll;
+}
+
+.color-gr{
+    color: #7a7d81;
+}
+.color-white{
+    color: white;
+}
+.tx-gr{
+    color: gray;
+}
+.margin-left{
+    margin-left: 10px;
+}
+/*inizio main con scroll*/
  .contenitore-nav{
     
     height: 50px;
 }
+
+.header-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header-main{
+    position: fixed;
+    left: 50px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 50px);
+}
+.contenitore{
+    width: calc(100% - 50px);
+}
  .cover-items{
      
      height: 200px;
-}
-
-
-.debug .logo{
-    height: 50px;
 }
 
 .btn {
@@ -35,11 +71,7 @@ html{
     border-radius: 50px;
     color: white;
 }
-.header-main {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .contenitore-nav ul{
     display: flex;
     justify-content: center;
@@ -63,18 +95,52 @@ img{
 #played h2{
      color: white;
 }
-.tx-gr{
+.list{
+    list-style: none;
+}
+.cover-items{
+    width: calc(50% - 40px);
+    margin: 20px;
+}
+.contenitore-nav{
+    margin-top: 70px;
+}
+#played h5{
+    text-align: center;
+    color: white;
+}
+#played h6{
+    text-align: center;
     color: gray;
 }
-footer{
-    height: 100px;
+/*fine main con scroll*/
+
+/*inizio asidebar*/
+aside{
+    width: 50px;
    
 }
-main{
-    height: calc(100vh - 100px);
-    overflow-y: hidden;
-   
+.main-nav{
+    background-color: black;
+ }
+ .main-nav{
+    min-height: 400px;
+    overflow: hidden;
+    
 }
+.main-nav .nav-top{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.nav-top{
+    height: calc(100% - 100px);
+}
+
+.logo{
+    height: 50px;
+}
+
 .logo-s{
     max-height: 100%;
 }
@@ -97,6 +163,37 @@ main{
 }
 .nav-icons .br-img h4{
     display: none;
+}
+.addplaylist{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.addplaylist i{
+   font-size: 50px;
+   
+}
+
+.main-nav .nav-playlist {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.main-nav .nav-playlist{
+    display: none;
+}
+
+.nav-bottom{
+    padding: 5px;
+}
+.nav-bottom .br-icons h4 {
+    display: none;
+}
+.nav-bottom .br-icons  h5{
+    display: none;
+}
+.nav-bottom{
+    height: 100px;
 }
 .br-icons{
     display: flex;
@@ -121,103 +218,19 @@ hr{
 hr{
     display: none;
 }
-.nav-bottom{
-    padding: 5px;
-}
-.nav-bottom .br-icons h4 {
-    display: none;
-}
-.nav-bottom .br-icons  h5{
-    display: none;
-}
-aside{
-    width: 50px;
-   
-}
-.main-nav{
-    min-height: 400px;
-    overflow: hidden;
-    
-}
-.main-nav .nav-top{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-.addplaylist{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.addplaylist i{
-   font-size: 50px;
-   
-}
 
 
-.main-nav .nav-playlist {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
+/*fine asidebar*/
 
-.header-main{
-    position: fixed;
-    left: 50px;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: calc(100% - 50px);
-}
-.contenitore{
-    width: calc(100% - 50px);
-}
-.flex{
-    display: flex;
-}
-.wrap{
-    flex-wrap: wrap;
-}
-.scroll{
-    overflow-y: scroll;
-}
-.list{
-    list-style: none;
-}
-.color-gr{
-    color: #7a7d81;
-}
-.color-white{
-    color: white;
-}
-.nav-bottom{
-    height: 100px;
-}
-.nav-top{
-    height: calc(100% - 100px);
-}
-.cover-items{
-    width: calc(50% - 40px);
-    margin: 20px;
-}
-.contenitore-nav{
-    margin-top: 70px;
-}
-#played h5{
-    text-align: center;
-    color: white;
-}
-#played h6{
-    text-align: center;
-    color: gray;
-}
-.margin-left{
-    margin-left: 10px;
-}
+/*inizio footer*/
 footer{
     
     width: 100%;
 }
-
+footer{
+    height: 100px;
+   
+}
 .footer-top{
     
     display: flex;
@@ -301,10 +314,7 @@ footer{
     
 
 }
-
-.main-nav .nav-playlist{
-    display: none;
-}
+/*fine footer*/
 
 
 
@@ -401,9 +411,6 @@ footer{
         display: block;
     }
     
-    
-    
- 
     
 }
 @media screen and (min-width:992px) {
