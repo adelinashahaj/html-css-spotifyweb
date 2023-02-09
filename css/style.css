@@ -4,8 +4,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.debug main{
-    background-color: black;
+ main{
+    background-color: rgb(7, 1, 25);
 }
 .debug footer{
     background-color: antiquewhite;
@@ -14,14 +14,14 @@
     background-color: brown;
 }
 .debug .contenitore{
-    background-color: blue;
+   
 }
-.debug .contenitore-nav{
-    background-color: aliceblue;
+ .contenitore-nav{
+    
     height: 50px;
 }
-.debug .cover-items{
-     background-color: aquamarine;
+ .cover-items{
+     
      height: 200px;
 }
 .debug .nav-bottom{
@@ -36,6 +36,37 @@
 }
 .debug .nav-icons{
     background-color: azure;
+}
+.btn {
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    color: white;
+}
+.header-main {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.contenitore-nav ul{
+    display: flex;
+    justify-content: center;
+    
+}
+img{
+    max-width: 100%;
+}
+.contenitore-nav li, a{
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+    padding: 10px;
+}
+#played h2{
+     color: white;
+}
+.tx-gr{
+    color: gray;
 }
 footer{
     height: 100px;
@@ -99,11 +130,22 @@ aside{
     height: calc(100% - 100px);
 }
 .cover-items{
-    width: calc(50% - 20px);
-    margin: 10px;
+    width: calc(50% - 40px);
+    margin: 20px;
 }
 .contenitore-nav{
     margin-top: 70px;
+}
+#played h5{
+    text-align: center;
+    color: white;
+}
+#played h6{
+    text-align: center;
+    color: gray;
+}
+.margin-left{
+    margin-left: 10px;
 }
 footer{
     
@@ -236,7 +278,7 @@ footer{
     }
     
     .cover-items{
-        width: calc(25% - 20px);
+        width: calc(25% - 40px);
     }
     
  
@@ -244,7 +286,7 @@ footer{
 }
 @media screen and (min-width:992px) {
     .cover-items{
-        width: calc((100% / 6) - 20px);
+        width: calc((100% / 6) - 40px);
     }
    
     
