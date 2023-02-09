@@ -85,6 +85,10 @@ main{
 .nav-top img{
     max-height: 50%;
 }
+.br-img{
+    display: flex;
+    align-items: center;
+}
 .nav-icons img{
     height: 50px;
 }
@@ -120,14 +124,20 @@ aside{
 .main-nav{
     min-height: 400px;
     overflow: hidden;
+    
 }
 .main-nav .nav-top{
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
-
-
+.addplaylist{
+    display: flex;
+    align-items: center;
+}
+.addplaylist i{
+   font-size: 50px;
+}
 
 .main-nav .nav-playlist {
     overflow: hidden;
@@ -290,6 +300,12 @@ footer{
         width: calc(100% - 200px);
         left: 200px;
     }
+    .main-nav{
+        min-height: 400px;
+        overflow: hidden;
+        padding: 10px;
+        
+    }
     .main-nav .nav-playlist {
         overflow: hidden;
         display: flex;
@@ -304,7 +320,7 @@ footer{
     }
     .logo-b{
         display: block;
-        height: 50px;
+        height: 100px;
     }
     .logo-s{
         display: none;
@@ -328,13 +344,18 @@ footer{
         width: calc(100% - 200px);
         left: 200px;
     }
-    
+    .main-nav{
+        min-height: 400px;
+        overflow: hidden;
+        padding: 10px;
+        
+    }
     .cover-items{
         width: calc(25% - 40px);
     }
     .logo-b{
         display: block;
-        height: 50px;
+        height: 100px;
     }
     .logo-s{
         display: none;
@@ -350,7 +371,12 @@ footer{
     .cover-items{
         width: calc((100% / 6) - 40px);
     }
-   
+    .main-nav{
+        min-height: 400px;
+        overflow: hidden;
+        padding: 10px;
+        
+    }
     
     
 }
