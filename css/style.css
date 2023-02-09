@@ -8,10 +8,10 @@
     background-color: rgb(7, 1, 25);
 }
 .debug footer{
-    background-color: antiquewhite;
+    
 }
 .debug .main-nav{
-    background-color: brown;
+   background-color: black;
 }
 .debug .contenitore{
    
@@ -25,17 +25,16 @@
      height: 200px;
 }
 .debug .nav-bottom{
-     background-color:orangered ;
+  
 }
 .debug .nav-top{
-    background-color: aquamarine;
+   
 }
 .debug .logo{
-    background-color: #7a7d81;
     height: 50px;
 }
 .debug .nav-icons{
-    background-color: azure;
+
 }
 .btn {
     padding: 5px;
@@ -77,8 +76,46 @@ main{
     overflow-y: hidden;
    
 }
+.logo-s{
+    max-height: 100%;
+}
+.logo-b{
+    display: none;
+}
+.nav-top img{
+    max-height: 50%;
+}
+.nav-icons img{
+    height: 50px;
+}
+.br-icons{
+    display: flex;
+    align-items: center;
+}
+.br-icons h4{
+    color: #7a7d81;
+    margin-left: 5px;
+}
+.br-icons img{
+    height: 50px;
+    background-color: #7a7d81;
+    border-radius: 50px;
+}
+.br-icons h5{
+    color: white;
+}
+hr{
+    margin: 10px 0;
+}
+.nav-bottom{
+    padding: 5px;
+}
+.nav-bottom .br-icons h4 h5{
+    display: none;
+}
 aside{
     width: 50px;
+   
 }
 .main-nav{
     min-height: 400px;
@@ -119,6 +156,9 @@ aside{
 }
 .list{
     list-style: none;
+}
+.color-gr{
+    color: #7a7d81;
 }
 .color-white{
     color: white;
@@ -262,7 +302,19 @@ footer{
     .main-nav .nav-playlist ul{
         overflow: scroll;
     }
-    
+    .logo-b{
+        display: block;
+        height: 50px;
+    }
+    .logo-s{
+        display: none;
+    }
+    .nav-top img{
+        max-height: 50%;
+    }
+    .nav-bottom h4 h5{
+        display: none;
+    }
     
 }
 @media screen and (min-width:768px) {
@@ -279,6 +331,16 @@ footer{
     
     .cover-items{
         width: calc(25% - 40px);
+    }
+    .logo-b{
+        display: block;
+        height: 50px;
+    }
+    .logo-s{
+        display: none;
+    }
+    .nav-bottom h4 h5{
+        display: none;
     }
     
  
