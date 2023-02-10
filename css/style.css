@@ -74,6 +74,34 @@ main{
      height: 200px;
 }
 
+
+.cover-wrapper {
+    position: relative;
+}
+
+.cover-wrapper img {
+    width: 100%;
+}
+
+.cover-wrapper .cover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    font-size: 40px;
+}
+
+.cover-items:hover .cover-overlay {
+    display: flex;
+}
+
+
+
 .btn {
     padding: 5px;
     border: 1px solid whitesmoke;
@@ -164,11 +192,17 @@ aside{
     display: flex;
     align-items: center;
 }
+ .br-img:hover  h5{
+    color: white;
+}
 .nav-icons img{
     height: 34px;
     margin-left: 5px;
 }
 .nav-icons .br-img h4{
+    display: none;
+}
+.nav-icons .br-img h5{
     display: none;
 }
 .nav-icons a{
@@ -183,6 +217,9 @@ aside{
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+.addplaylist:hover  h3, .addplaylist:hover i  {
+    color: white;
 }
 .addplaylist i{
    font-size: 50px;
@@ -250,12 +287,13 @@ hr{
 
 /*inizio footer*/
 footer{
-    
+    height: 100px; 
     width: 100%;
 }
 footer{
-    height: 100px; 
+    
 }
+
 .footer-top{
     display: flex;
     background-color: #222222;
@@ -273,7 +311,7 @@ footer{
 }
 .lista1{
     display: flex;
-    width: 30%;
+    width: 250px;
     align-items: center;
 }
 .lista1 h6:hover{
@@ -293,8 +331,16 @@ footer{
 .icons-play i{
     padding-left: 10px;
 }
+.lista2{
+    width: 55%;
+ 
+}
+.lista2 #play:hover{
+    transform: scale(1.1);
+}
 .icons2{
     text-align: center;
+    
 }
 .avanzamento {
     display: flex;
@@ -304,29 +350,37 @@ footer{
 }
 .avanzamento-completo {
     background-color: #7a7d81;
-    height: 2px;
+    height: 5px;
     width: 70%;
+    border-radius: 5px;
 }
-
+.parte-avanzamento .corrent{
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: -4px;
+    display: none;
+}
 .parte-avanzamento {
     background-color: white;
-    height: 2px;
+    height: 5px;
     width: 20%;
+    border-radius: 5px;
+    position: relative;
 }
-.avanzamento1{
-    background-color: gray;
-    height: 2px;
-    width: 162px;
-}
-.avanzamento-colorato{
-    background-color: white;
-    height: 2px;
-    width: 10%;
-}
+.avanzamento-completo:hover .corrent{
+    display: block;
+} 
+
+
 .icons3{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 10px;
 }
 .icons3 i{
      padding-right: 10px;
@@ -334,16 +388,10 @@ footer{
 .footer-top .icons{
     margin-left: 1rem;
 }
-.lista2{
-    width: 55%;
- 
-}
-.lista2 #play:hover{
-    transform: scale(1.1);
-}
+
+
 .lista3 {
-    
-    width: 25%;
+    width: 250px;
 }
 /*fine footer*/
 
@@ -397,6 +445,9 @@ footer{
     .nav-icons .br-img h4{
         display: block;
     }
+    .nav-icons .br-img h5{
+        display: block;
+    }
     
 }
 @media screen and (min-width:768px) {
@@ -438,6 +489,9 @@ footer{
     .nav-icons .br-img h4{
         display: block;
     }
+    .nav-icons .br-img h5{
+        display: block;
+    }
     
 }
 @media screen and (min-width:992px) {
@@ -459,5 +513,7 @@ footer{
     .nav-icons .br-img h4{
         display: block;
     }
-    
+    .nav-icons .br-img h5{
+        display: block;
+    }
 }
