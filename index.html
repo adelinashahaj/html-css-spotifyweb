@@ -14,7 +14,9 @@
     <!--inizio main-->
     <main class="flex">
         <aside class="main-nav">
+            <div class="trattino-left"></div>
             <div class="nav-top">
+               
                 <div class="logo">
                     <a class="logo-s" href="#">
 
@@ -31,6 +33,7 @@
                                 <div class="br-img ">
                                     <img class="tx-gr" src="img/home.svg" alt="">
                                     <h4 class="color-white">home</h4>
+                                   
                                 </div>
                                  </a>
                         </li>
@@ -132,8 +135,12 @@
             </div>
             <nav class="contenitore-nav">
                 <ul>
-                    <li class="br-bottom">
-                        <a  href="#">IN EVIDENZA</a>
+                    <li >
+                        <a  href="#"class="br-bottom">
+                            IN EVIDENZA
+                            <div class="trattino"></div>
+                        </a>
+                        
                     </li>
                     <li>
                         <a href="#">PODCAST</a>
@@ -225,14 +232,24 @@
 
                     <ul class="list flex wrap">
                         <li class="cover-items">
-                            <img src="img/radar.jpeg" alt="">
+                            <div class="cover-wrapper">
+                                <img src="img/radar.jpeg" alt="">
+                                <div class="cover-overlay">
+                                    <i class="far fa-play-circle color-white ic-play"></i>
+                                </div>
+                            </div>
                             <h5>Release Radar</h5>
-                            <i id="ic-play" class="far fa-play-circle color-white"></i>
+                            
                         </li>
                         <li class="cover-items">
-                            <img src="img/mixdaily.jpeg" alt="">
+                            <div class="cover-wrapper">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <div class="cover-overlay">
+                                    <i class="far fa-play-circle color-white ic-play"></i>
+                                </div>
+                            </div>
                             <h5>Daily Mix 1</h5>
-                            <i id="ic-play" class="far fa-play-circle color-white"></i>
+                           
                         </li>
                         
                     </ul>
@@ -276,7 +293,7 @@
                    </div>
                    <div class="icons tx-gr">
                     <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-folder"></i>
                    </div>       
 
              </div>

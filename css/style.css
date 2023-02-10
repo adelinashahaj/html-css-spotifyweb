@@ -41,18 +41,27 @@ main{
 .radius{
     border-radius: 50%;
 }
-.br-bottom{
-    border-bottom: 1px solid green;
-   
+
+.trattino{
+    background-color: green;
+    width: 2%;
+    height: 3px;
+    position: absolute;
+    bottom: 21px;
+    display: block;
+    left: 28%;
+
 }
 /*inizio main con scroll*/
  .contenitore-nav{
     height: 50px;
+    position: relative;
 }
 .header-main {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
 }
 .header-main{
     position: fixed;
@@ -60,6 +69,7 @@ main{
     height: 60px;
     background-color: rgba(0, 0, 0, 0.5);
     width: calc(100% - 50px);
+    z-index: 999;
 }
 .header-main span{
     margin-right: 60px;
@@ -172,7 +182,17 @@ aside{
 .nav-top{
     height: calc(100% - 100px);
 }
-
+.trattino-left{
+    background-color: green;
+    width: 2%;
+    height: 3px;
+    position: absolute;
+    bottom: 82%;
+    display: block;
+    left: -1%;
+    transform: rotate(91deg);
+    
+}
 .logo{
     height: 50px;
 }
@@ -421,7 +441,7 @@ footer{
        
     }
     .main-nav .nav-playlist ul{
-        overflow: scroll;
+        overflow-y: auto;
     }
     .logo-b{
         display: block;
