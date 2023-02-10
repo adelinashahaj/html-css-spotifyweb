@@ -191,6 +191,7 @@ aside{
     display: block;
     left: -1%;
     transform: rotate(91deg);
+    display: none;
     
 }
 .logo{
@@ -468,6 +469,18 @@ footer{
     .nav-icons .br-img h5{
         display: block;
     }
+    .trattino-left{
+        background-color: green;
+        width: 2%;
+        height: 3px;
+        position: absolute;
+        bottom: 88%;
+        display: block;
+        left: -1%;
+        transform: rotate(91deg);
+        display: block;
+        
+    }
     
 }
 @media screen and (min-width:768px) {
@@ -512,6 +525,18 @@ footer{
     .nav-icons .br-img h5{
         display: block;
     }
+    .trattino-left{
+        background-color: green;
+        width: 2%;
+        height: 3px;
+        position: absolute;
+        bottom: 88%;
+        display: block;
+        left: -1%;
+        transform: rotate(91deg);
+        display: block;
+        
+    }
     
 }
 @media screen and (min-width:992px) {
@@ -535,5 +560,17 @@ footer{
     }
     .nav-icons .br-img h5{
         display: block;
+    }
+    .trattino-left{
+        background-color: green;
+        width: 2%;
+        height: 3px;
+        position: absolute;
+        bottom: 88%;
+        display: block;
+        left: -1%;
+        transform: rotate(91deg);
+        display: block;
+        
     }
 }
